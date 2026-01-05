@@ -7,7 +7,7 @@ import { AuthProvider } from "@/context/AuthContext";
 
 
 export const metadata = {
-  title: "Expenny ⋅ The Subscription Tracker",
+  title: "SubTrackr ⋅ The Subscription Tracker",
   description: "Track all of your subscription analytics!",
 };
 
@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <header>
       <div>
         <Link href={'/'}>
-        <h1 className="text-gradient">ExPenny</h1>
+        <h1 className="text-gradient">SubTrackr</h1>
         </Link>
         <p>The Subscription Tracker</p>
       </div>
@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
       <div className="footer-content">
         <div>
           <div>
-            <h4>ExPenny</h4>
+            <h4>SubTrackr</h4>
             <p>|</p>
             <button disabled>Install App</button>
           </div>
