@@ -42,7 +42,7 @@ export default function RootLayout({ children }) {
           <p>Suggestions for improvement? <a>Share Feedback</a></p>
           <div>
             <Link href={'/privacy'}>Privacy Policy</Link>
-            <Link href={'/tos'}>LinkTerms of Service</Link>
+            <Link href={'/tos'}>Terms of Service</Link>
           </div>
         </div>
       </div>
