@@ -16,7 +16,7 @@ export default function GoTo() {
             {path == '/' && (
                 <>
                     <Link href={'/dashboard?register=true'}>
-                    <p>Sign Up</p>
+                    <button>Sign Up</button>
                     </Link>
                     <Link href={'/dashboard'}>
                         <button>Login &rarr;</button>
