@@ -5,7 +5,7 @@ import SubscriptionForm from "@/components/SubscriptionForm";
 import SubscriptionsDisplay from "@/components/SubscriptionsDisplay";
 import SubscriptionSummary from "@/components/SubscriptionSummary";
 import { useAuth } from "@/context/AuthContext";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 
 const blankSubscription = {
         name: '',
@@ -65,7 +65,10 @@ export default function DashboardPage() {
 
   if (!isAuthenticated) {
     return (
-      <Login />
+      <Suspense fallback={<p>Loading...</p>}>
+
+        <Login />
+      </Suspense>
     )
   }
 
